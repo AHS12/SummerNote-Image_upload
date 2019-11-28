@@ -2,7 +2,7 @@
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "";
-$dbname = "wsdb";
+$dbname = "sndb";
 
 $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
 

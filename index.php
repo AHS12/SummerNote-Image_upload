@@ -108,10 +108,16 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body pad">
-                            <div class="mb-3">
-                                <textarea class="textarea" placeholder="Place some text here"
-                                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                            </div>
+                            <form action="" id="postForm">
+                                <div class="mb-3">
+                                    <textarea class="textarea" id="post" name="post" placeholder="Place some text here"
+                                        style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"
+                                        required></textarea>
+                                </div>
+                                <div>
+                                    <button class="btn btn-success" onclick="savePost()">Save</button>
+                                </div>
+                            </form>
                             <p class="text-sm mb-0">
                                 Editor <a href="https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg">Documentation
                                     and
@@ -190,6 +196,24 @@
 
 
         })
+
+        function savePost() {
+            $.ajax({
+                method: "post",
+                url: "save_post_query.php",
+                datatype: "json",
+                data: $("#postForm").serialize(),
+                success: function (data) {
+                    console.log(data);
+                    $("#postForm").html("");
+                    // $('#stock-update-modal').modal('hide');
+                    // location.reload(true);
+                    alert(data);
+
+                }
+
+            });
+        }
     </script>
 </body>
 
