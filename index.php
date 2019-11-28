@@ -29,12 +29,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>Text Editors</h1>
+                        <h1>SUMMERNOTE WYSIWYG</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Text Editors</li>
+                            <li class="breadcrumb-item active">SUMMERNOTE WYSIWYG</li>
                         </ol>
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                     <div class="card card-outline card-info">
                         <div class="card-header">
                             <h3 class="card-title">
-                                Bootstrap WYSIHTML5
+                                SUMMERNOTE WYSIWYG
                                 <small>Simple and fast</small>
                             </h3>
                             <!-- tools box -->
@@ -75,7 +75,7 @@
                                 </div>
                             </form>
                             <p class="text-sm mb-0">
-                                Editor <a href="https://github.com/bootstrap-wysiwyg/bootstrap3-wysiwyg">Documentation
+                                Editor <a href="https://github.com/summernote/summernote">Documentation
                                     and
                                     license
                                     information.</a>
