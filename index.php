@@ -156,6 +156,10 @@
 
         function savePost() {
             event.preventDefault();
+            if(!$("#post").val()){
+                alert("Make A Post!");
+                return;
+            } else {
             $.ajax({
                 method: "post",
                 url: "save_post_query.php",
@@ -172,6 +176,7 @@
                 }
 
             });
+        }
         }
     </script>
 </body>
