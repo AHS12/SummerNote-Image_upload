@@ -7,7 +7,8 @@ if(isset($_POST)){
 
     if (mysqli_query($connection,$query)) {
         echo "Success";
-        header("Location: index.php");
+        // 
+      //  header("Refresh:0; url=index.php");
 
     } else {
         echo "Error: ".$connection->error;
