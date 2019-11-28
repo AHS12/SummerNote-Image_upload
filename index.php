@@ -208,7 +208,7 @@
                     $("#postForm").html("");
                     // $('#stock-update-modal').modal('hide');
                     // location.reload(true);
-                    alert(data);
+                   // alert(data);
 
                 }
 
